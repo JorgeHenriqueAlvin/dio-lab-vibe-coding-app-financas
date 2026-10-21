@@ -1,89 +1,74 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💡 ZenFin AI — Gestão Financeira Sem Fricção com Inteligência Artificial
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+> Projeto desenvolvido como parte do desafio **"Criando o Conceito do Seu App de Finanças Pessoais com Vibe Coding"** da [Digital Innovation One (DIO)](https://www.dio.me/).
 
-## ✨ O que é Vibe Coding
+---
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
+## 📌 Sumário
+- [1. Resumo do Conceito do App](#1-resumo-do-conceito-do-app)
+  - [1.1. O Problema](#11-o-problema)
+  - [1.2. A Solução: ZenFin AI](#12-a-solução-zenfin-ai)
+  - [1.3. Público-Alvo & Diferenciais](#13-público-alvo--diferenciais)
+- [2. O Prompt Final (PRD Completo para Lovable / Copilot)](#2-o-prompt-final-prd-completo-para-lovable--copilot)
+- [3. Interações & Demonstrações Visuais](#3-interações--demonstrações-visuais)
+- [4. Reflexão & Aprendizados com o Vibe Coding](#4-reflexão--aprendizados-com-o-vibe-coding)
+- [5. Autor & Agradecimentos](#5-autor--agradecimentos)
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+---
 
-## 🎯 Desafio
+## 1. Resumo do Conceito do App
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
+### 1.1. O Problema
+A maioria das pessoas falha em manter o controle financeiro não por falta de vontade, mas pelo **excesso de fricção**:
+- Aplicativos tradicionais exigem o preenchimento de formulários lentos e burocráticos para cada café comprado.
+- Planilhas tornam-se confusas e difíceis de preencher no dia a dia.
+- Falta de aconselhamento proativo: os dados ficam parados em tabelas sem orientar se o usuário pode ou não gastar em determinado momento do mês.
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
+### 1.2. A Solução: ZenFin AI
+O **ZenFin AI** reinventa a gestão financeira aplicando o método de **Vibe Coding** e **IA Conversacional**:
+- **Zero Formulários:** Registre receitas e despesas simplesmente enviando mensagens naturais:
+  > *"Gastei R$ 48 no almoço do restaurante hoje com Pix"*  
+  > *"Recebi meu adiantamento de R$ 1.500"*  
+  > *"Uber pro trabalho R$ 23,90 no cartão"*
+- **Classificação com NLP:** A IA interpreta o texto, extrai o valor, a data, o meio de pagamento e categoriza automaticamente (Alimentação, Transporte, Moradia, etc.).
+- **Consultor Financeiro "Posso Comprar?":** Antes de fazer uma compra por impulso, pergunte ao ZenFin (*"Posso comprar um tênis de R$ 380 agora?"*). A IA analisa seu saldo líquido e previsões do mês e entrega uma recomendação sem julgamentos.
 
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+### 1.3. Público-Alvo & Diferenciais
+- **Público-Alvo:** Jovens adultos, universitários, freelancers e profissionais que querem simplicidade e odeiam preencher tabelas.
+- **Diferenciais:**
+  - Interface *Mobile-First* com modo escuro e visual moderno (*Glassmorphism*).
+  - Feedback empático e acolhedor em tom de conversa de WhatsApp.
+  - Painel com indicadores em tempo real (Receitas, Despesas, Saldo e Taxa de Economia).
 
-## 🪄 Etapas do Desafio
+---
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
+## 2. O Prompt Final (PRD Completo para Lovable / Copilot)
 
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
+Abaixo está o **Product Requirements Document (PRD)** estruturado utilizado para gerar o conceito e a interface da aplicação:
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+```text
+# PRODUCT REQUIREMENTS DOCUMENT (PRD) — ZENFIN AI MVP
 
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+## 🎯 OBJETIVO DO PRODUTO
+Criar uma aplicação web responsiva (Mobile-First) de finanças pessoais com interface moderna e abordagem conversacional baseada em IA, eliminando formulários burocráticos e fornecendo insights instantâneos para o usuário.
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+## 👥 PERSONA E TOM DE VOZ
+- Persona: Gabriel, 24 anos, quer poupar dinheiro de forma descomplicada para viagens.
+- Tom de Voz do Agente: Empático, motivador, direto e descontraído.
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+## 🚀 FUNCIONALIDADES PRINCIPAIS (MVP)
+1. Entrada de Gastos Conversacional (Vibe Input):
+   - Campo de chat que aceita entradas livres como: "Gastei 35 reais na farmácia hoje", "Salário 3800 caiu".
+   - Reconhece e categoriza automaticamente (Alimentação, Transporte, Moradia, etc.) e o método de pagamento.
+2. Dashboard Dinâmico:
+   - Cards de KPIs: Saldo Atual, Receitas, Despesas e Taxa de Economia (%).
+   - Gráfico de Rosca/Donut de distribuição de despesas por categoria.
+3. Simulador "Posso Comprar?" (AI Advisor):
+   - O usuário informa o item e valor; a IA avalia o saldo disponível e indica se a compra é segura, se deve parcelar ou aguardar.
+4. Histórico de Transações:
+   - Lista detalhada com badges visuais de categoria e botão para excluir.
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
-
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
-```
-
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
-
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
-
-### 2. Explorando o Lovable na Prática
-
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
-
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
-
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
-
-### 3. Entregando o Desafio na DIO
-
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
-
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
-
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
-
-## 💬 Conclusão
-
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+## 🎨 DESIGN SYSTEM & UI/UX
+- Tema: Dark Mode premium (#090D16) com efeito Glassmorphism.
+- Cores: Emerald (#10B981) para receitas e saldos positivos, Rose (#F43F5E) para despesas, Violet (#8B5CF6) para IA.
+- Componentes: Tailwind CSS + Lucide Icons + Chart.js / Recharts.
